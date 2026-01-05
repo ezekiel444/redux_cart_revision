@@ -11,12 +11,7 @@ const data = useSelector(state=>state.allProducts)
 const dispatch = useDispatch()
 
 
-
-
-
 const cart = data.cart
-
-
 
 useEffect(() => {
   dispatch(CalculateTotalAndAmount())

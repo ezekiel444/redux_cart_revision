@@ -9,21 +9,17 @@ const CartItem = () => {
 
   const dispatch = useDispatch()
 
-
-const handleRemoveItem = (id)=>{
-dispatch(removeItem(id))
-} 
+  const handleRemoveItem = (id)=>{
+  dispatch(removeItem(id))
+  } 
 
 
 const toggleIncrease_Decrease = (id,currrentState)=>{
-  dispatch(toggleIncreaseAndDecrease(id,currrentState))
-  
+  dispatch(toggleIncreaseAndDecrease(id,currrentState))  
 }
-
 
 const renderCart = data.cart.map(cart=>{
   const { img, title, price, amount, id } = cart
-  
 
   return (
     <div className="cart-item" key={id}>
